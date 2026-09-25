@@ -1,0 +1,160 @@
+.resume-page {
+  padding-block: var(--space-48) var(--space-96);
+}
+.resume-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-16);
+  margin-bottom: var(--space-48);
+}
+.resume-actions > a:last-child {
+  margin-left: auto;
+}
+@media (max-width: 40rem) {
+  .resume-actions > a:last-child {
+    margin-left: 0;
+  }
+}
+.resume-document {
+  max-width: 54rem;
+  margin-inline: auto;
+  overflow-wrap: anywhere;
+}
+.resume-document h1 {
+  font-size: var(--text-display);
+  line-height: 1.1;
+  letter-spacing: var(--tracking-heading);
+}
+.resume-document h2 {
+  font-size: var(--text-heading);
+  color: var(--color-primary);
+  margin-bottom: var(--space-24);
+}
+.resume-document h3 {
+  color: var(--color-primary);
+  font-size: var(--text-lg);
+}
+.resume-document section {
+  margin-top: var(--space-48);
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-24);
+}
+.resume-document p {
+  margin-block: var(--space-12);
+}
+.resume-document a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.resume-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-8) var(--space-24);
+}
+.resume-entry + .resume-entry {
+  margin-top: var(--space-24);
+}
+.resume-document ul {
+  list-style: disc;
+  padding-left: var(--space-24);
+}
+.resume-meta {
+  font-size: var(--text-sm);
+}
+.resume-document li + li {
+  margin-top: var(--space-4);
+}
+@page {
+  size: A4;
+  margin: 14mm 16mm;
+}
+@media print {
+  html,
+  body,
+  #root,
+  main,
+  .resume-page {
+    background: white !important;
+    color: #161616 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    min-height: 0 !important;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.35;
+  }
+  body:has(.resume-document) .site-header,
+  body:has(.resume-document) footer,
+  .skip-link,
+  .resume-actions {
+    display: none !important;
+  }
+  .resume-page,
+  .resume-document {
+    width: 100%;
+    max-width: none;
+  }
+  .resume-document h1 {
+    font:
+      bold 23pt Arial,
+      sans-serif;
+    letter-spacing: 0;
+  }
+  .resume-document h2 {
+    font:
+      bold 12pt Arial,
+      sans-serif;
+    margin: 0 0 7pt;
+    color: #161616;
+    break-after: avoid;
+  }
+  .resume-document h3 {
+    font:
+      bold 10pt Arial,
+      sans-serif;
+    margin: 0;
+    color: #161616;
+  }
+  .resume-document p {
+    margin: 5pt 0;
+    color: #161616;
+  }
+  .resume-document a {
+    color: #161616;
+  }
+  .resume-document section {
+    margin-top: 14pt;
+    padding-top: 8pt;
+    border-top: 1px solid #aaa;
+  }
+  .resume-document ul {
+    padding-left: 14pt;
+    margin: 5pt 0;
+  }
+  .resume-document li + li {
+    margin-top: 2pt;
+  }
+  .resume-entry {
+    break-inside: avoid;
+  }
+  .resume-entry + .resume-entry {
+    margin-top: 10pt;
+  }
+  .resume-meta,
+  .resume-contacts {
+    font-size: 9pt;
+  }
+  .resume-contacts {
+    gap: 4pt 12pt;
+  }
+  .resume-page-two {
+    break-before: page;
+  }
+  .resume-page-two > section:first-child {
+    margin-top: 0;
+  }
+}

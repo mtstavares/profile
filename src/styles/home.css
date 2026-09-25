@@ -1,0 +1,361 @@
+@layer components {
+  .portfolio-header {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background: var(--color-background);
+  }
+  .portfolio-header .header-inner {
+    min-height: var(--space-96);
+    gap: var(--space-12);
+    flex-wrap: wrap;
+    padding-block: var(--space-16);
+  }
+  .header-actions {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: var(--space-8);
+  }
+  .portfolio-header .header-resume {
+    padding-inline: var(--space-12);
+  }
+  .portfolio-header .primary-navigation {
+    display: none;
+    flex-basis: 100%;
+    flex-direction: column;
+    gap: var(--space-4);
+    margin: 0;
+    padding-block: var(--space-12);
+    border-top: 1px solid var(--color-border);
+  }
+  .portfolio-header .primary-navigation.is-open {
+    display: flex;
+  }
+  .portfolio-header .primary-navigation a {
+    font-size: var(--text-sm);
+    padding-inline: var(--space-8);
+  }
+  .portfolio-header .primary-navigation a[aria-current='location'] {
+    color: var(--color-accent);
+  }
+  .home-section {
+    scroll-margin-top: calc(var(--space-96) + var(--space-32));
+  }
+  .home .home-section {
+    padding-block: var(--space-48) var(--space-64);
+  }
+  .home-section:focus {
+    outline: none;
+  }
+  .home-section:focus-visible > .section-header h2 {
+    outline: var(--focus-width) solid var(--color-focus);
+    outline-offset: var(--space-8);
+  }
+  .hero-positioning {
+    color: var(--color-secondary);
+    max-width: 48ch;
+    margin-block: var(--space-32);
+    font-size: var(--text-sm);
+  }
+  .about-grid,
+  .github-grid,
+  .contact-grid {
+    display: grid;
+    gap: var(--space-32);
+  }
+  .about-grid > h3,
+  .contact-grid h3 {
+    font-size: var(--text-heading);
+    letter-spacing: var(--tracking-heading);
+    font-weight: 500;
+    line-height: 1.2;
+    max-width: 18ch;
+  }
+  .prose {
+    max-width: 66ch;
+    color: var(--color-secondary);
+  }
+  .prose p + p {
+    margin-top: var(--space-24);
+  }
+  .expertise-grid {
+    display: grid;
+    gap: var(--space-32);
+  }
+  .expertise-grid article {
+    padding-block: var(--space-16);
+    border-top: 1px solid var(--color-border);
+  }
+  .expertise-grid h3 {
+    font-size: var(--text-lg);
+    font-weight: 500;
+    margin-block: var(--space-16) var(--space-8);
+  }
+  .expertise-grid p {
+    font-size: var(--text-sm);
+    color: var(--color-secondary);
+    max-width: 42ch;
+  }
+  .timeline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .timeline-item {
+    display: grid;
+    gap: var(--space-16);
+    padding-bottom: var(--space-48);
+  }
+  .timeline-period {
+    font: var(--text-sm) var(--font-mono);
+    color: var(--color-secondary);
+  }
+  .timeline-item article {
+    padding-left: var(--space-24);
+    border-left: 1px solid var(--color-border-interactive);
+    position: relative;
+  }
+  .timeline-item article::before {
+    content: '';
+    position: absolute;
+    top: var(--space-4);
+    left: -4px;
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background: var(--color-accent);
+  }
+  .timeline-item h3 {
+    font-size: var(--text-lg);
+    font-weight: 500;
+    margin-block: var(--space-12) var(--space-16);
+  }
+  .timeline-item article > p:not(.eyebrow),
+  .timeline-item ul {
+    color: var(--color-secondary);
+    max-width: 76ch;
+    font-size: var(--text-sm);
+  }
+  .timeline-item ul,
+  .project-card ul {
+    list-style: disc;
+    padding-left: var(--space-16);
+    margin-top: var(--space-16);
+  }
+  .timeline-item li + li,
+  .project-card li + li {
+    margin-top: var(--space-8);
+  }
+  .timeline-secondary {
+    padding-bottom: 0;
+  }
+  .timeline-secondary article::before {
+    background: var(--color-muted);
+  }
+  .timeline-secondary h3 {
+    font-size: var(--text-base);
+  }
+  .projects-grid {
+    display: grid;
+    gap: var(--space-16);
+  }
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    gap: var(--space-32);
+  }
+  .project-card h3 {
+    font-size: var(--text-xl);
+    margin-block: var(--space-16);
+  }
+  .project-card p:not(.eyebrow),
+  .project-card ul {
+    color: var(--color-secondary);
+    font-size: var(--text-sm);
+  }
+  .project-card .project-category {
+    margin-bottom: var(--space-24);
+  }
+  .project-featured .project-card {
+    background: var(--color-elevated);
+    border-top: 2px solid var(--color-accent);
+  }
+  .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-8);
+    margin-block: var(--space-24) var(--space-16);
+  }
+  .project-card .external-link {
+    margin-top: var(--space-8);
+  }
+  .github-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-24);
+  }
+  .github-handle {
+    font-size: var(--text-heading);
+    letter-spacing: var(--tracking-heading);
+  }
+  .repository-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+  }
+  .repository-list li {
+    border-bottom: 1px solid var(--color-border);
+    padding-block: var(--space-8);
+  }
+  .repository-list .external-link {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    overflow-wrap: anywhere;
+  }
+  .credential-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--space-24);
+  }
+  .credential-list li {
+    padding-left: var(--space-16);
+    border-left: 1px solid var(--color-border-interactive);
+  }
+  .credential-list h3 {
+    font-size: var(--text-base);
+    font-weight: 500;
+  }
+  .credential-list p,
+  .education-grid article > p:last-child {
+    color: var(--color-secondary);
+    font-size: var(--text-sm);
+    margin-top: var(--space-8);
+  }
+  .more-credentials {
+    margin-top: var(--space-32);
+  }
+  .more-credentials summary {
+    cursor: pointer;
+    padding-block: var(--space-12);
+    color: var(--color-secondary);
+    font-size: var(--text-sm);
+    width: fit-content;
+  }
+  .more-credentials[open] summary {
+    margin-bottom: var(--space-24);
+  }
+  .education-grid {
+    display: grid;
+    gap: var(--space-32);
+  }
+  .education-grid h3 {
+    font-size: var(--text-lg);
+    font-weight: 500;
+    margin-top: var(--space-16);
+  }
+  .contact-grid > div > p {
+    margin-top: var(--space-16);
+    color: var(--color-secondary);
+  }
+  .contact-email {
+    display: flex;
+    align-items: center;
+    gap: var(--space-12);
+    font-size: clamp(0.95rem, 2vw, 1.5rem);
+    text-decoration: underline;
+    text-underline-offset: var(--space-8);
+    min-height: 48px;
+    overflow-wrap: anywhere;
+  }
+  .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-8) var(--space-24);
+    margin-top: var(--space-16);
+  }
+  .footer-socials {
+    display: flex;
+    gap: var(--space-24);
+  }
+  .site-footer .footer-inner {
+    gap: var(--space-24);
+  }
+  .not-found {
+    max-width: 60rem;
+  }
+}
+@media (min-width: 48rem) {
+  .about-grid,
+  .github-grid,
+  .contact-grid {
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--space-48);
+  }
+
+  /* Keep contact details on the same vertical axis as the second education column. */
+  .contact-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .expertise-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .timeline-item {
+    grid-template-columns: 10rem minmax(0, 1fr);
+    gap: var(--space-32);
+  }
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .project-featured {
+    grid-column: 1 / -1;
+  }
+  .project-featured .project-card {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: var(--space-64);
+    padding: var(--space-32);
+  }
+  .project-featured .project-card > div:last-child {
+    align-self: end;
+  }
+  .credential-list,
+  .education-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 64rem) {
+  .portfolio-header .header-inner {
+    flex-wrap: nowrap;
+    gap: var(--space-24);
+  }
+  .portfolio-header .primary-navigation {
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+    gap: var(--space-16);
+    border: 0;
+    padding: 0;
+    margin-left: auto;
+  }
+  .portfolio-header .primary-navigation a {
+    padding-inline: 0;
+  }
+  .header-actions {
+    order: 2;
+    margin-left: 0;
+    gap: var(--space-16);
+  }
+  .portfolio-header .menu-toggle {
+    display: none;
+  }
+}

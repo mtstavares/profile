@@ -1,0 +1,149 @@
+.projects-page,
+.case-page {
+  padding-block: var(--space-48) var(--space-96);
+}
+.project-page-heading {
+  max-width: 52rem;
+  padding-block: var(--space-32) var(--space-64);
+}
+.project-page-heading h1 {
+  font-size: var(--text-display);
+  line-height: 1.08;
+  letter-spacing: var(--tracking-heading);
+  overflow-wrap: anywhere;
+  margin-block: var(--space-16) var(--space-24);
+}
+.project-page-heading > p:not(.eyebrow) {
+  margin-block: var(--space-16);
+}
+.project-page-heading > p {
+  max-width: 65ch;
+}
+.projects-page .section > h2 {
+  margin-bottom: var(--space-32);
+}
+.project-stage {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--color-secondary);
+}
+.case-link {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-16);
+  margin-block: var(--space-24) var(--space-16);
+  color: var(--color-accent);
+}
+.projects-all {
+  margin-top: var(--space-32);
+}
+.case-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-12);
+  font-size: var(--text-sm);
+  color: var(--color-secondary);
+}
+.case-breadcrumb a {
+  color: var(--color-accent);
+}
+.case-section,
+.case-architecture {
+  border-top: 1px solid var(--color-border);
+  padding-block: var(--space-48);
+}
+.case-section {
+  display: grid;
+  gap: var(--space-24);
+}
+.case-section h2,
+.case-architecture > h2,
+.projects-page .section > h2 {
+  font-size: var(--text-heading);
+  line-height: 1.2;
+  letter-spacing: var(--tracking-heading);
+  color: var(--color-primary);
+}
+.case-section p + p {
+  margin-top: var(--space-16);
+}
+.case-section p,
+.case-section li,
+.case-architecture > p {
+  max-width: 70ch;
+}
+.case-section ul,
+.case-sources ul {
+  padding-left: var(--space-24);
+  list-style: disc;
+}
+.case-section li + li {
+  margin-top: var(--space-12);
+}
+.case-architecture > p {
+  margin-block: var(--space-24);
+}
+.architecture-flow {
+  display: grid;
+  gap: var(--space-16);
+  margin-block: var(--space-32);
+}
+.architecture-flow li {
+  padding: var(--space-24);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  min-width: 0;
+}
+.architecture-flow h3 {
+  font-size: var(--text-lg);
+  margin-block: var(--space-16) var(--space-12);
+}
+.architecture-flow p {
+  font-size: var(--text-sm);
+}
+.case-note {
+  border-left: 2px solid var(--color-border-interactive);
+  padding-left: var(--space-24);
+}
+.case-sources {
+  border-block: 1px solid var(--color-border);
+  padding-block: var(--space-24);
+}
+.case-sources summary {
+  cursor: pointer;
+  color: var(--color-primary);
+}
+.case-sources p,
+.case-sources ul {
+  margin-top: var(--space-16);
+}
+.case-sources a {
+  overflow-wrap: anywhere;
+}
+.case-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--space-32);
+  margin-top: var(--space-48);
+}
+.case-pagination a {
+  display: grid;
+  gap: var(--space-8);
+  color: var(--color-accent);
+}
+@media (min-width: 48rem) {
+  .case-section {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    gap: var(--space-48);
+  }
+  .architecture-flow {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 75rem) {
+  .architecture-flow {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}

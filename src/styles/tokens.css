@@ -1,0 +1,46 @@
+@theme {
+  --color-background: #080b0f;
+  --color-surface: #0d1117;
+  --color-elevated: #111820;
+  --color-border: #202a35;
+  --color-border-interactive: #526171;
+  --color-primary: #f3f6f8;
+  --color-secondary: #98a6b5;
+  --color-muted: #8593a2;
+  --color-accent: #36d1c4;
+  --color-accent-hover: #69ded4;
+  --color-success: #8bccaa;
+  --color-warning: #e2bd7c;
+  --color-danger: #ed999b;
+  --color-focus: #36d1c4;
+  --color-overlay: #080b0fcc;
+  --font-sans: 'Inter Variable', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+  --spacing: 0.25rem;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+}
+:root {
+  --space-4: 0.25rem;
+  --space-8: 0.5rem;
+  --space-12: 0.75rem;
+  --space-16: 1rem;
+  --space-24: 1.5rem;
+  --space-32: 2rem;
+  --space-48: 3rem;
+  --space-64: 4rem;
+  --space-96: 6rem;
+  --space-128: 8rem;
+  --layout-max: 78rem;
+  --text-xs: 0.6875rem;
+  --text-sm: 0.8125rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.5rem;
+  --text-heading: clamp(1.75rem, 3vw, 2.5rem);
+  --text-display: clamp(2.5rem, 5.6vw, 5rem);
+  --tracking-label: 0.12em;
+  --tracking-heading: -0.055em;
+  --motion-fast: 160ms;
+  --focus-width: 2px;
+}
