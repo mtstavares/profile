@@ -153,8 +153,20 @@
   }
   .resume-page-two {
     break-before: page;
+    font-size: 9.5pt;
+    line-height: 1.28;
   }
   .resume-page-two > section:first-child {
+    margin-top: 0;
+  }
+  .resume-page-two section {
+    margin-top: 10pt;
+    padding-top: 6pt;
+  }
+  .resume-page-two .resume-entry + .resume-entry {
+    margin-top: 6pt;
+  }
+  .resume-page-two li + li {
     margin-top: 0;
   }
 }

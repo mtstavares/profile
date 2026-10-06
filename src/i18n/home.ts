@@ -24,8 +24,9 @@ export const ptHome = {
   githubProfile: 'Ver GitHub',
   certificationsTitle: 'Certificações e cursos',
   certificationsSubtitle: 'Segurança da informação, endpoints e redes.',
-  educationTitle: 'Formação acadêmica',
-  educationSubtitle: 'Desenvolvimento e fundamentos de TI.',
+  educationTitle: 'Formação',
+  educationSubtitle:
+    'Desenvolvimento, redes de computadores e segurança ofensiva.',
   completed: 'Concluído em',
   present: 'Atual',
   earlierExperience: 'Experiência anterior',
@@ -67,7 +68,8 @@ export const enHome: { [K in keyof typeof ptHome]: string } = {
   certificationsTitle: 'Certifications & courses',
   certificationsSubtitle: 'Information security, endpoints and networks.',
   educationTitle: 'Education',
-  educationSubtitle: 'Software development and IT foundations.',
+  educationSubtitle:
+    'Software development, computer networks and offensive security.',
   completed: 'Completed in',
   present: 'Present',
   earlierExperience: 'Earlier experience',

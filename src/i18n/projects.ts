@@ -3,7 +3,7 @@ export const ptProjects = {
   caseLink: 'Ler case técnico',
   projectsIntro: 'Segurança aplicada. Decisões documentadas.',
   projectsBody:
-    'Cinco projetos na interseção entre segurança defensiva, automação e engenharia de software.',
+    'Seis projetos na interseção entre segurança defensiva, automação e engenharia de software.',
   editorialFeatured: 'Em destaque',
   otherProjects: 'Outros projetos',
   backProjects: 'Projetos',
@@ -30,7 +30,7 @@ export const enProjects: { [K in keyof typeof ptProjects]: string } = {
   caseLink: 'Read technical case',
   projectsIntro: 'Applied security. Documented decisions.',
   projectsBody:
-    'Five projects at the intersection of defensive security, automation and software engineering.',
+    'Six projects at the intersection of defensive security, automation and software engineering.',
   editorialFeatured: 'Featured',
   otherProjects: 'Other projects',
   backProjects: 'Projects',

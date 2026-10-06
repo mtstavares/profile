@@ -233,6 +233,30 @@ export const certifications: readonly Certification[] = [
 ]
 export const education: readonly Education[] = [
   {
+    id: 'network-engineering-postgraduate',
+    institution: 'Universidade Cruzeiro do Sul',
+    qualification: {
+      'pt-BR': 'Pós-graduação em Engenharia de Redes de Computadores',
+      'en-US': 'Postgraduate Program in Computer Network Engineering',
+    },
+    period: { start: '2026' },
+  },
+  {
+    id: 'desec-pentest-professional',
+    institution: 'Desec Security',
+    qualification: {
+      'pt-BR': 'Pentest Profissional',
+      'en-US': 'Pentest Profissional Training',
+    },
+    period: { start: '2026' },
+    description: {
+      'pt-BR':
+        'Formação prática em fundamentos de segurança ofensiva, redes, protocolos, análise de tráfego, reconhecimento, enumeração, vulnerabilidades e execução de pentests.',
+      'en-US':
+        'Practical training in offensive security foundations, networks, protocols, traffic analysis, reconnaissance, enumeration, vulnerabilities and penetration testing execution.',
+    },
+  },
+  {
     id: 'back-end',
     institution: 'Universidade Cruzeiro do Sul',
     qualification: {

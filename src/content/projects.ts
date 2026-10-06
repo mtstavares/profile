@@ -3,6 +3,7 @@ import { incidentManagementCase } from './cases/incident-management'
 import { osintNetworkCase } from './cases/osint-network-monitor'
 import { telegramSearchCase } from './cases/telegram-search'
 import { consultaCredenciaisCase } from './cases/consulta-credenciais'
+import { wiresharkInterpreterCase } from './cases/wireshark-interpreter'
 import type { Project } from '../types/content'
 
 // Static editorial content verified against the pinned repository revisions.
@@ -101,6 +102,62 @@ export const projects: readonly Project[] = [
     },
   },
   {
+    id: 'wireshark-interpreter',
+    slug: 'wireshark-interpreter',
+    caseStudy: wiresharkInterpreterCase,
+    listingFeatured: true,
+    stage: { 'pt-BR': 'Em desenvolvimento', 'en-US': 'In development' },
+    evidence: {
+      revision: 'be2b40dd31e3c58fe725d6bb51977a18c53bb3d9',
+      reviewedAt: '2026-10-06',
+      files: [
+        'README.md',
+        'pyproject.toml',
+        'docs/02-ARQUITETURA.md',
+        'backend/app/application/run_analysis.py',
+        'backend/app/detection/detectors.py',
+        'frontend/package.json',
+      ],
+    },
+    repository: 'mtstavares/wireshark_interpreter',
+    status: 'reviewed',
+    featured: true,
+    description: {
+      'pt-BR':
+        'Analisador de segurança para capturas PCAP/PCAPNG, com pipeline determinístico, evidências rastreáveis e relatórios auditáveis.',
+      'en-US':
+        'A security analyzer for PCAP/PCAPNG captures with a deterministic pipeline, traceable evidence and auditable reports.',
+    },
+    highlights: {
+      'pt-BR': [
+        'Extração offline com TShark e integrações opcionais com Zeek e Suricata.',
+        'Detecção de atividades de rede e autenticação com contexto e evidências.',
+        'Interface de investigação e relatórios JSON, HTML e PDF.',
+      ],
+      'en-US': [
+        'Offline TShark extraction with optional Zeek and Suricata integrations.',
+        'Network and authentication activity detection with context and evidence.',
+        'Investigation interface and JSON, HTML and PDF reports.',
+      ],
+    },
+    technologies: [
+      'Python',
+      'FastAPI',
+      'TShark',
+      'React',
+      'TypeScript',
+      'SQLAlchemy',
+    ],
+    name: {
+      'pt-BR': 'Wireshark Interpreter',
+      'en-US': 'Wireshark Interpreter',
+    },
+    category: {
+      'pt-BR': 'Network Security / Incident Response',
+      'en-US': 'Network Security / Incident Response',
+    },
+  },
+  {
     id: 'osint-network',
     slug: 'osint-network-monitor',
     caseStudy: osintNetworkCase,
@@ -113,7 +170,7 @@ export const projects: readonly Project[] = [
     },
     repository: 'mtstavares/osint_monitor',
     status: 'reviewed',
-    featured: true,
+    featured: false,
     description: {
       'pt-BR':
         'Monitoramento de conexões de rede com enriquecimento de IPs externos e correlação entre conexões e processos.',

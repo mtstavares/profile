@@ -11,6 +11,7 @@ export default tseslint.config(
       'node_modules',
       'playwright-report',
       'test-results',
+      'src/config/incidentes_controle_divciber',
     ],
   },
   js.configs.recommended,

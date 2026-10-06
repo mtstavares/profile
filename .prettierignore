@@ -2,3 +2,4 @@ tmp/
 dist/
 test-results/
 playwright-report/
+src/config/incidentes_controle_divciber/

@@ -58,6 +58,7 @@ export function Credentials() {
               </p>
               <h3>{localize(item.qualification, locale)}</h3>
               <p>{item.institution}</p>
+              {item.description && <p>{localize(item.description, locale)}</p>}
             </article>
           ))}
         </div>
