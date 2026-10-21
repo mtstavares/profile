@@ -108,8 +108,8 @@ export const projects: readonly Project[] = [
     listingFeatured: true,
     stage: { 'pt-BR': 'Em desenvolvimento', 'en-US': 'In development' },
     evidence: {
-      revision: 'be2b40dd31e3c58fe725d6bb51977a18c53bb3d9',
-      reviewedAt: '2026-10-06',
+      revision: '39fc45a806ef12385288bc9565287e735f208a80',
+      reviewedAt: '2026-10-21',
       files: [
         'README.md',
         'pyproject.toml',
@@ -131,12 +131,12 @@ export const projects: readonly Project[] = [
     highlights: {
       'pt-BR': [
         'Extração offline com TShark e integrações opcionais com Zeek e Suricata.',
-        'Detecção de atividades de rede e autenticação com contexto e evidências.',
+        'Detecção de varreduras, ataques web, abuso de autenticação e credenciais em texto claro.',
         'Interface de investigação e relatórios JSON, HTML e PDF.',
       ],
       'en-US': [
         'Offline TShark extraction with optional Zeek and Suricata integrations.',
-        'Network and authentication activity detection with context and evidence.',
+        'Detection of scans, web attacks, authentication abuse and clear-text credentials.',
         'Investigation interface and JSON, HTML and PDF reports.',
       ],
     },

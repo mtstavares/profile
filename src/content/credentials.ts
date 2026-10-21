@@ -1,6 +1,35 @@
 import type { Certification, Education } from '../types/content'
 export const certifications: readonly Certification[] = [
   {
+    id: 'cisco-junior-cybersecurity-analyst',
+    name: {
+      'pt-BR': 'Junior Cybersecurity Analyst Career Path',
+      'en-US': 'Junior Cybersecurity Analyst Career Path',
+    },
+    issuer: 'Cisco Networking Academy',
+    issuedAt: '2026-10',
+    category: 'cybersecurity',
+    credentialId: 'e82b866e-1b75-4e6c-b91f-6aba1c4233f0',
+    credentialUrl:
+      'https://www.credly.com/badges/e82b866e-1b75-4e6c-b91f-6aba1c4233f0/public_url',
+    certificateAsset:
+      'credentials/matheus-tavares-junior-cybersecurity-analyst.pdf',
+    featured: true,
+    resumeSelected: true,
+  },
+  {
+    id: 'huawei-ekit-sme-network-junior-engineer',
+    name: {
+      'pt-BR': 'HUAWEI eKit SME Network Junior Engineer',
+      'en-US': 'HUAWEI eKit SME Network Junior Engineer',
+    },
+    issuer: 'Huawei',
+    issuedAt: '2026-10',
+    category: 'networking',
+    credentialId: '20261017000138',
+    resumeSelected: true,
+  },
+  {
     id: 'backend-diploma',
     name: {
       'pt-BR': 'Tecnólogo em desenvolvimento Backend',
@@ -22,7 +51,7 @@ export const certifications: readonly Certification[] = [
     issuer: 'SkillFront',
     credentialId: '33204241563890',
     credentialUrl: 'https://www.skillfront.com/Badges/33204241563890',
-    issuedAt: '2026',
+    issuedAt: '2026-07',
     category: 'cybersecurity',
     featured: true,
     resumeSelected: true,
@@ -52,7 +81,7 @@ export const certifications: readonly Certification[] = [
       'en-US': 'Certified Phishing Prevention Specialist (CPPS)',
     },
     issuer: 'Hack & Fix',
-    issuedAt: '2025-03',
+    issuedAt: '2025-12',
     category: 'cybersecurity',
     featured: true,
     resumeSelected: true,
